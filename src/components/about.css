@@ -1,0 +1,199 @@
+.aboutPageFullContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1f1f27;
+}
+
+.aboutPageCont {
+  background-color: #272836;
+  height: 80vh;
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transform: scale(0.9);
+  animation: popIn 1s forwards;
+}
+
+.tiltedTextContainer {
+  color: #fff;
+  font-size: 24px;
+  padding: 4px 8px;
+  transform: translateY(-50%);
+  animation: slideInLeft 1s forwards;
+}
+
+.aboutPageContText {
+  flex: 1;
+  text-align: center;
+  animation: fadeIn 1s forwards;
+}
+
+.abtText {
+  text-align: center;
+  max-width: 700px;
+  margin: 30px auto;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.photoContainer {
+  width: 200px;
+  animation: fadeIn 1s forwards;
+}
+
+.circularFrame {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: rotateIn 1s forwards;
+}
+
+.profileImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
+.btnLearnMore {
+  margin-top: 20px;
+  padding: 12px 30px;
+  border: none;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btnLearnMore:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes rotateIn {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutPageCont {
+    flex-direction: column;
+  }
+
+  .aboutPageContText {
+    order: 2;
+  }
+
+  .photoContainer {
+    order: 1;
+    margin-bottom: 30px;
+  }
+}
+
+.fixed-text-container2A {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  transform: rotate(-90deg);
+  transform-origin: 40% 50%;
+  margin-top: 140px;
+  z-index: 999;
+}
+
+.fixed-text2A {
+  color: white;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.fixed-text2A::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 25vh;
+  background-color: white;
+  z-index: 1;
+  transform-origin: top center;
+  transform: translate(-6000%, -1.5%) rotate(90deg);
+}
+
+.fixed-textA-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  transform: rotate(90deg);
+  transform-origin: 50% 0%;
+  z-index: 999;
+}
+
+.fixed-textA {
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.fixed-textA::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 25vh;
+  background-color: white;
+  z-index: 1;
+  transform-origin: top center;
+  transform: translate(-5000%, -2.5%) rotate(90deg);
+}

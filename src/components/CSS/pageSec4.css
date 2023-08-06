@@ -1,0 +1,245 @@
+.pageSec4Container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.pageSec4BgImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -999;
+  height: 100%;
+  background: url("https://www.hdcarwallpapers.com/download/tvr_griffith_2018_4k_2-3840x2160.jpg")
+    no-repeat center center fixed;
+  background-size: cover;
+}
+
+.pageSec4BgImg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Change the opacity as needed */
+  z-index: 2;
+}
+
+.pageSec4TextOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.pageSec4Text {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.pageSec4Container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  z-index: 100;
+
+  text-align: center;
+}
+
+.pageSec4Container .card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+.pageSec4Container .card .content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.pageSec4Container .card:hover .content {
+  transform: translateY(-20px);
+}
+
+.pageSec4Container .card .content .imgBx {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.pageSec4Container .card .content .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.pageSec4Container .card .content .contentBx h3 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0 10px;
+  line-height: 1.1em;
+}
+
+.pageSec4Container .card .content .contentBx h3 span {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: initial;
+}
+
+.pageSec4Container .card .sci {
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+}
+
+.pageSec4Container .card .sci li {
+  list-style: none;
+  margin: 0 10px;
+  transform: translateY(40px);
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.pageSec4Container .card:hover .sci li {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.pageSec4Container .card .sci li a {
+  color: #fff;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .pageSec4Container .card {
+    width: 40%;
+    height: 25%;
+  }
+
+  .pageSec4Container .card .content .imgBx img {
+    height: 80%;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+  }
+}
+
+.visitButton {
+  background-color: #fff;
+  border: 1px solid black;
+  color: #000;
+  font-family: "Raleway", sans-serif;
+  border-radius: 10px;
+  width: 75px;
+  height: 40px;
+  text-align: center;
+}
+
+.visitButton:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.pageSec4Container .card .sci {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.pageSec4Container .card:hover .sci {
+  opacity: 1;
+}
+
+.pageSec4Container .card .sci .visitButton {
+  background-color: #fff;
+  border: 1px solid black;
+  color: #000;
+  font-family: "Raleway", sans-serif;
+  border-radius: 10px;
+  width: 75px;
+  height: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: opacity 0.5s;
+}
+
+.pageSec4Container .card .sci .visitButton:hover {
+  opacity: 1;
+  background-color: #000;
+  color: #fff;
+}
+
+.pageSec4Container .card .sci li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.pageSec4Container .card .sci li a {
+  color: #fff;
+  font-size: 20px;
+}
+.centeredButton {
+  display: flex;
+  justify-content: center;
+}
+
+.sci {
+  text-align: center;
+}
+
+.visitButton {
+  margin-right: 30px;
+}
+
+.pageSec4Title {
+  text-align: center;
+  font-size: 24px;
+  margin: 20px;
+  color: #fff;
+}
+
+.pageSec4Links {
+  font-size: 1.2rem;
+}

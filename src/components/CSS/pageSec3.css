@@ -1,0 +1,56 @@
+.containerDiv {
+  display: flex;
+  justify-content: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  position: relative;
+}
+
+.introTitle {
+  text-align: center;
+  font-family: "Londrina Outline", cursive;
+  font-size: 70px;
+  z-index: -90;
+}
+
+.introParagraph {
+  font-size: large;
+  text-align: center;
+  font-family: "Carter One", cursive;
+  margin-left: 20%;
+  z-index: 100;
+  margin-right: 20%;
+}
+.side-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.side-image img {
+  border-radius: 25%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .introParagraph {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  .containerDiv {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  .introTitle {
+    font-size: 45px;
+  }
+}

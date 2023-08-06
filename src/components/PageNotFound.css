@@ -1,0 +1,50 @@
+.page-not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #272836;
+}
+
+.car-image img {
+  width: 300px;
+  height: auto;
+}
+
+.text-container {
+  text-align: center;
+}
+
+.heading {
+  font-size: 72px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.subheading {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+.message {
+  font-size: 18px;
+  color: #555;
+}
+
+.home-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #000000;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.home-link:hover {
+  background-color: #ffffff;
+  color: #000;
+}
