@@ -4,7 +4,6 @@ import { motion, useScroll, useTransform } from "framer-motion";
 const PageSec2 = () => {
   const { scrollYProgress } = useScroll();
 
-  // Define the ranges for x1 and x2, based on the screen size
   const x1 = useTransform(
     scrollYProgress,
     [0, 1],

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import "./CSS/favoriteItemsShowcase.css";
+import "./favoriteItemsShowcase.css";
 
 const favoriteItems = [
   {
@@ -31,8 +31,6 @@ const favoriteItems = [
     label: "Favorite Day of the Week",
     value: "Friday after 4 o'clock and Saturday",
   },
-
-  { label: "Favorite Animal", value: "Cheetah" },
 ];
 
 const FavoriteItemsShowcase = () => {

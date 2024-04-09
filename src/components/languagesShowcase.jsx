@@ -1,51 +1,116 @@
 import React from "react";
 import "./CSS/languageShowcase.css";
-
-const languages = [
-  {
-    name: "JavaScript",
-    color: "#f7df1e",
-    tooltip:
-      "Used for web-development. I mainly use it with React. This website is made with Javascript.",
-  },
-  {
-    name: "Python",
-    color: "#306998",
-    tooltip:
-      "My favorite language. One of the most popular, versatile languages out there.",
-  },
-  {
-    name: "Java",
-    color: "#e15258",
-    tooltip: "I just know the basics of this, Is don't program much in Java.",
-  },
-  {
-    name: "HTML/CSS",
-    color: "#FF4500",
-    tooltip: "Markup language along with styling. Very common and popular.",
-  },
-];
+import {
+  faPython,
+  faJs,
+  faJava,
+  faCss3,
+  faHtml5,
+  faNpm,
+  faReact,
+  faBootstrap,
+  faNodeJs,
+  faStackOverflow,
+  faSwift,
+  faNode,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Tooltip } from "react-tooltip";
 
 const LanguageShowcase = () => {
   return (
     <>
-      <h1 className="plh1">Programming Languages/Frameworks</h1>
-      <p className="plp">
-        Below are the programming languages/frameworks/libraries I know. Hover
-        over them to know more.
-      </p>
-      <div className="language-grid">
-        {languages.map((language, index) => (
-          <div
-            key={index}
-            className="language-card"
-            style={{ backgroundColor: language.color }}
-            data-tooltip={language.tooltip}
-          >
-            <span>{language.name}</span>
-          </div>
-        ))}
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          justifyContent: "center",
+        }}
+      >
+        <div className="lsDiv">
+          <h1 className="lsh1">I have experience in:</h1>
+          <FontAwesomeIcon
+            icon={faPython}
+            className="lsIcon"
+            data-tooltip-id="tooltip-ls"
+            data-tooltip-content="Python"
+            data-tooltip-place="top"
+          />
+          <FontAwesomeIcon
+            icon={faReact}
+            className="lsIcon"
+            data-tooltip-id="tooltip-ls"
+            data-tooltip-content="React"
+            data-tooltip-place="top"
+          />
+          <FontAwesomeIcon
+            icon={faJava}
+            className="lsIcon"
+            data-tooltip-id="tooltip-ls"
+            data-tooltip-content="Java"
+            data-tooltip-place="top"
+          />
+          <FontAwesomeIcon
+            icon={faJs}
+            className="lsIcon"
+            data-tooltip-id="tooltip-ls"
+            data-tooltip-content="Javascript"
+            data-tooltip-place="top"
+          />
+          <br />
+          <FontAwesomeIcon
+            icon={faHtml5}
+            className="lsIcon"
+            data-tooltip-id="tooltip-ls"
+            data-tooltip-content="HTML"
+            data-tooltip-place="top"
+          />
+          <FontAwesomeIcon
+            icon={faCss3}
+            className="lsIcon"
+            data-tooltip-id="tooltip-ls"
+            data-tooltip-content="CSS3"
+            data-tooltip-place="top"
+          />{" "}
+          <FontAwesomeIcon
+            icon={faSwift}
+            className="lsIcon"
+            data-tooltip-id="tooltip-ls"
+            data-tooltip-content="Swift"
+            data-tooltip-place="top"
+          />
+          <FontAwesomeIcon
+            icon={faNpm}
+            className="lsIcon"
+            data-tooltip-id="tooltip-ls"
+            data-tooltip-content="NPM.js"
+            data-tooltip-place="top"
+          />
+          <br />
+          <FontAwesomeIcon
+            icon={faNodeJs}
+            className="lsIcon"
+            data-tooltip-id="tooltip-ls"
+            data-tooltip-content="Node JS"
+            data-tooltip-place="top"
+          />
+          <FontAwesomeIcon
+            icon={faStackOverflow}
+            className="lsIcon"
+            data-tooltip-id="tooltip-ls"
+            data-tooltip-content="Stackoverflow"
+            data-tooltip-place="top"
+          />{" "}
+          <FontAwesomeIcon
+            icon={faBootstrap}
+            className="lsIcon"
+            data-tooltip-id="tooltip-ls"
+            data-tooltip-content="Bootstrap 5"
+            data-tooltip-place="top"
+          />
+        </div>
       </div>
+      <Tooltip id="tooltip-ls" />
     </>
   );
 };

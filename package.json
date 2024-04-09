@@ -10,8 +10,13 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.0",
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@motionone/utils": "^10.15.1",
     "framer-motion": "^10.12.21",
+    "gsap": "^3.12.5",
     "mdb-react-ui-kit": "^6.1.0",
     "react": "^18.2.0",
     "react-animated-css": "^1.2.1",
@@ -21,12 +26,17 @@
     "react-flip-toolkit": "^7.1.0",
     "react-icons": "^4.10.1",
     "react-intersection-observer": "^9.5.2",
+    "react-lazy-load": "^4.0.1",
     "react-parallax-tilt": "^1.7.154",
     "react-spring": "^9.7.2",
     "react-tilt": "^1.0.2",
+    "react-tooltip": "^5.26.3",
     "react-type-animation": "^3.1.0",
     "sitemap": "^7.1.1",
-    "sitemap-stream": "^2.0.1"
+    "sitemap-stream": "^2.0.1",
+    "smooth-scrollbar": "^8.8.4",
+    "styled-components": "^6.1.8",
+    "wavesurfer.js": "^6.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

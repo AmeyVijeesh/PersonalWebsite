@@ -1,13 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useLayoutEffect } from "react";
 import "./CSS/navbar.css";
 import { NavLink, useLocation } from "react-router-dom";
 
 const NavBar = () => {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
   const [isExpanded, setIsExpanded] = useState(false);
   const location = useLocation();
 
   const handleToggle = () => {
     setIsExpanded(!isExpanded);
+  };
+
+  const handleMenuItemClick = () => {
+    setIsExpanded(false);
   };
 
   const isAboutPage = location.pathname === "/about";
@@ -54,6 +61,7 @@ const NavBar = () => {
                     style={({ isActive }) => ({
                       color: isActive ? "#2190D6" : "white",
                     })}
+                    onClick={handleMenuItemClick}
                   >
                     Home
                   </NavLink>
@@ -67,6 +75,7 @@ const NavBar = () => {
                       color: isActive ? "#2190D6" : "white",
                       textDecoration: isActive ? "underline" : "",
                     })}
+                    onClick={handleMenuItemClick}
                   >
                     My Garage
                   </NavLink>
@@ -80,12 +89,12 @@ const NavBar = () => {
                       color: isActive ? "#2190D6" : "white",
                       textDecoration: isActive ? "underline" : "",
                     })}
+                    onClick={handleMenuItemClick}
                   >
                     About
                   </NavLink>
                 </a>
               </li>
-
               <li className="nav-item">
                 <a className="nav-link" href="#!">
                   <NavLink
@@ -94,6 +103,7 @@ const NavBar = () => {
                       color: isActive ? "#2190D6" : "white",
                       textDecoration: isActive ? "underline" : "",
                     })}
+                    onClick={handleMenuItemClick}
                   >
                     Contact
                   </NavLink>

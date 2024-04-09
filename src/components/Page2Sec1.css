@@ -1,0 +1,33 @@
+.page2Sec1BgImg {
+  width: 100%;
+  background: url(/src/components/ComponentAssets/bgpic.jpg) no-repeat center
+    center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.page2H1 {
+  font-size: 3rem;
+}
+
+.page2p {
+  font-size: 1.3rem;
+  width: 45%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .page2p {
+    font-size: 1rem;
+    width: 65%;
+    text-align: center;
+  }
+
+  .page2H1 {
+    font-size: 2rem;
+  }
+}

@@ -3,11 +3,11 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #1f1f27;
+  background-color: #000000;
 }
 
 .contactPageCont {
-  background-color: #272836;
+  background-color: #23242b;
   height: 80vh;
   width: 80vw;
   display: flex;
@@ -35,7 +35,6 @@
 }
 
 .btnContact {
-  margin-top: 20px;
   padding: 12px 30px;
   border: none;
   background-color: #000000;

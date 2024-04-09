@@ -1,130 +1,129 @@
-import img1 from "./ComponentAssets/CarImages/mbsc.jpeg";
-import img2 from "./ComponentAssets/CarImages/lrd.jpeg";
-import img3 from "./ComponentAssets/CarImages/p911gt3.jpeg";
-import img4 from "./ComponentAssets/CarImages/tmy.webp";
-import img5 from "./ComponentAssets/CarImages/bmwx3.jpeg";
-import img6 from "./ComponentAssets/CarImages/toyotacamry.jpeg";
-import img7 from "./ComponentAssets/CarImages/vwvirtus.jpeg";
-import img8 from "./ComponentAssets/CarImages/bdivo.jpeg";
-import img9 from "./ComponentAssets/CarImages/rrghost.jpg";
-import img10 from "./ComponentAssets/CarImages/kgemera.avif";
-import img11 from "./ComponentAssets/CarImages/apbattista.jpeg";
-import img12 from "./ComponentAssets/CarImages/rnevera.jpeg";
-import img13 from "./ComponentAssets/CarImages/lrevuelto.jpeg";
-import img14 from "./ComponentAssets/CarImages/pcayenne.avif";
-import img15 from "./ComponentAssets/CarImages/lexuslfa.jpeg";
-
+import img1 from "./ComponentAssets/CarImages/img1.jpeg";
+import img2 from "./ComponentAssets/CarImages/img2.png";
+import img3 from "./ComponentAssets/CarImages/img3.jpg";
+import img4 from "./ComponentAssets/CarImages/img4.jpg";
+import img5 from "./ComponentAssets/CarImages/img5.jpeg";
+import img7 from "./ComponentAssets/CarImages/img7.jpeg";
+import img6 from "./ComponentAssets/CarImages/img6.jpeg";
+import img8 from "./ComponentAssets/CarImages/img8.jpg";
+import img9 from "./ComponentAssets/CarImages/img9.jpeg";
+import img10 from "./ComponentAssets/CarImages/img10.jpeg";
+import img11 from "./ComponentAssets/CarImages/img11.jpeg";
+import img12 from "./ComponentAssets/CarImages/img12.jpeg";
+import img13 from "./ComponentAssets/CarImages/img13.jpeg";
+import img14 from "./ComponentAssets/CarImages/img14.jpeg";
+import img15 from "./ComponentAssets/CarImages/img15.webp";
 const dreamCars = [
   {
     id: 1,
-    name: "Mercedes Benz S-Class",
-    price: "$125,000",
+    name: "Cadillac Escalade V",
+    price: "$148,000",
     image: img1,
-    type: "USA Garage",
+    desc: "Large SUV combining luxury and performance. One of my favorite SUVs.",
   },
   {
     id: 2,
-    name: "Land Rover Defender 110",
+    name: "Porsche 911 Turbo S",
     image: img2,
-    price: "$82,000",
-    type: "USA Garage",
+    price: "$230,000",
+    desc: "One of the most beautiful entities in this universe. Amongst the finest cars ever made. My dream car.",
   },
   {
     id: 3,
-    name: "Porsche 911 GT3",
+    name: "Lucid Air Sapphire",
     image: img3,
-    price: "$208,000",
-    type: "USA Garage",
+    price: "$249,000",
+    desc: "Basically a faster, better, more luxuorius Tesla rival",
   },
   {
     id: 4,
-    name: "Tesla Model Y Long Range",
-    price: "$60,000",
+    name: "Kia EV6",
+    price: "$52,000",
     image: img4,
-    type: "USA Garage",
+    desc: "A fast and luxurious grocery-getter",
   },
   {
     id: 5,
-    name: "BMW  X3 xDrive M40i",
+    name: "Jeep Wrangler",
     image: img5,
-    price: "86 Lakhs INR",
-    type: "Indian Garage",
+    price: "$61,000",
+    desc: "Rugged, iconic, and an accomplished off-roader. One of the best off-roading vehicles money can buy.",
   },
   {
     id: 6,
-    name: "Toyota Camry Hybrid",
+    name: "Koenigsegg Gemera",
     image: img6,
-    type: "Indian Garage",
-    price: "47 Lakhs INR",
+    desc: "A lightning-fast 4 seater family hypercar. One of its kind.",
+    price: "$1.7 Million",
   },
   {
     id: 7,
-    name: "Volkswagen Virtus Topline",
+    name: "Pininfarina Battista",
     image: img7,
-    type: "Indian Garage",
-    price: "17 Lakhs INR",
+    desc: "Ridiculously fast electric hypercar from the Italian design house, Automobilli Pininfarina. Looks awesome.",
+    price: "$2.2 Million",
   },
   {
     id: 14,
-    name: "Porsche Cayenne Turbo GT",
-    image: img14,
-    type: "Supercar Garage",
-    price: "$221,000 USD",
+    name: "Mercedes Benz S63 W222",
+    image: img8,
+    desc: "No longer in production, yet it exudes class. One of the most sophisticated cars ever by Mercedes Benz.",
+    price: "$120,000 USD",
   },
 
   {
     id: 9,
-    name: "Rolls Royce Ghost Black Badge",
+    name: "Lexus LFA",
     image: img9,
-    type: "Supercar Garage",
-    price: "$492,000",
+    desc: "Best sounding exhaust of all time. Music to my ears.",
+    price: "$400,000",
   },
   {
     id: 11,
-    name: "Automobilli Pininfarina Battista",
-    image: img11,
-    type: "Supercar Garage",
-    price: "$2.2 Million USD",
+    name: "2019 Genesis G70",
+    image: img10,
+    desc: "Sophisticated, punchy beater car for $49k. The understated looks are drool-worthy",
+    price: "$50,000",
   },
 
   {
     id: 10,
-    name: "Koenigsegg Gemera",
-    image: img10,
-    type: "Supercar Garage",
-    price: "$1.7 Million USD",
+    name: "Geely Monjaro",
+    image: img11,
+    desc: "An insanely value-for-money Chinese full size SUV. Loaded with tech and gimmicks",
+    price: "$40,000",
   },
 
   {
     id: 12,
-    name: "Rimac Nevera",
+    name: "JCW Mini Cooper",
     image: img12,
-    type: "Supercar Garage",
-    price: "$2.7 Million USD",
+    desc: "A small, cute, and quick hatch. ",
+    price: "$36,375",
   },
 
   {
     id: 8,
-    name: "Bugatti Divo",
-    image: img8,
-    type: "Supercar Garage",
-    price: "$5.4 Million USD",
+    name: "BYD Han",
+    image: img13,
+    desc: "A cheap, fast and luxe Chinese EV with a range of 600kms.",
+    price: "$40,000",
   },
 
   {
     id: 15,
-    name: "Lexus LFA",
-    image: img15,
-    type: "Supercar Garage",
-    price: "$400,000 USD",
+    name: "1961 Jaguar E Type",
+    image: img14,
+    desc: "One of the finest looking classic cars. Still a legend today",
+    price: "Not Available.",
   },
 
   {
     id: 13,
-    name: "Lamborghini Revuelto",
-    image: img13,
-    type: "Supercar Garage",
-    price: "$430,000 USD",
+    name: "1969 Ford Mustang",
+    image: img15,
+    desc: "True definition of a muscle car. Sounds heavenly.",
+    price: "Not Available.",
   },
 ];
 

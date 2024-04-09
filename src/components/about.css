@@ -1,199 +1,218 @@
-.aboutPageFullContainer {
+.aboutCont {
   display: flex;
   justify-content: center;
-  align-items: center;
   height: 100vh;
-  background-color: #1f1f27;
-}
-
-.aboutPageCont {
-  background-color: #272836;
-  height: 80vh;
-  width: 80vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  transform: scale(0.9);
-  animation: popIn 1s forwards;
-}
-
-.tiltedTextContainer {
-  color: #fff;
-  font-size: 24px;
-  padding: 4px 8px;
-  transform: translateY(-50%);
-  animation: slideInLeft 1s forwards;
-}
-
-.aboutPageContText {
-  flex: 1;
-  text-align: center;
-  animation: fadeIn 1s forwards;
-}
-
-.abtText {
-  text-align: center;
-  max-width: 700px;
-  margin: 30px auto;
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-.photoContainer {
-  width: 200px;
-  animation: fadeIn 1s forwards;
-}
-
-.circularFrame {
   width: 100%;
-  height: 0;
-  padding-bottom: 100%;
-  border-radius: 50%;
-  overflow: hidden;
-  position: relative;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  animation: rotateIn 1s forwards;
+  background-color: #000;
+  padding: 5%;
+}
+.abouth1 {
+  margin-right: 20px;
+}
+.abouth2 {
+  text-wrap: nowrap;
+}
+.aboutp {
+  text-wrap: nowrap;
 }
 
-.profileImage {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  top: 0;
-  left: 0;
+.profContainer {
+  display: flex; /* Use flexbox for the container */
+  align-items: center; /* Align items to the top */
 }
 
-.btnLearnMore {
-  margin-top: 20px;
-  padding: 12px 30px;
-  border: none;
-  background-color: #000000;
-  color: #ffffff;
-  font-size: 18px;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-
-.btnLearnMore:hover {
-  background-color: #ffffff;
-  color: black;
-}
-
-@keyframes popIn {
-  0% {
-    transform: scale(0.5);
-    opacity: 0;
-  }
-  80% {
-    transform: scale(1.05);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-@keyframes slideInLeft {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes rotateIn {
-  to {
-    transform: rotate(360deg);
-  }
+.profPic {
+  margin-right: 20px;
+  width: 64vh;
+  height: 100vh;
 }
 
 @media (max-width: 768px) {
-  .aboutPageCont {
+  .profContainer {
     flex-direction: column;
   }
 
-  .aboutPageContText {
-    order: 2;
+  .profPic {
+    height: 62vh;
+    width: 43vh;
   }
 
-  .photoContainer {
-    order: 1;
-    margin-bottom: 30px;
+  .abouth1 {
+    margin: 12%;
+    text-align: center;
+  }
+
+  .aboutp {
+    visibility: hidden;
+  }
+
+  .abouth2 {
+    visibility: hidden;
+  }
+
+  .diva {
+    text-align: center;
   }
 }
 
-.fixed-text-container2A {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  transform: rotate(-90deg);
-  transform-origin: 40% 50%;
-  margin-top: 140px;
-  z-index: 999;
+.profPar {
+  flex: 1; /* Take remaining space */
 }
 
-.fixed-text2A {
+.dot {
+  height: 77px;
+  width: 75px;
+  background-color: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  position: relative;
+  margin-right: -30px; /* Adjust this value to overlap */
+}
+.dot1 {
+  height: 57px;
+  width: 59px;
+  background-color: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  position: relative;
+  margin-left: -7px; /* Adjust this value to overlap */
+}
+
+.diva2 {
+  position: absolute; /* Set diva2 to fixed positioning */
+  top: 10%; /* Position diva2 at the top */
+  right: 0.5%; /* Position diva2 at the right */
+}
+
+.diva {
+  position: fixed; /* Set diva to absolute positioning */
+  bottom: 2%; /* Position diva at the bottom */
+  left: 2%; /* Position diva at the left */
+}
+
+.bttn1 {
+  background-color: #000;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  color: #fff;
+  margin: 3px;
+  height: 32px;
+  width: 32px;
+}
+
+.bttn1:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.bttn2 {
+  border-radius: 50%;
+  border: none;
+  font-size: 50px;
   color: white;
-  font-size: 1rem;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: black;
 }
 
-.fixed-text2A::after {
+.diva2 i,
+.diva2 svg {
+  color: #000000;
+}
+
+.arrow {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  display: inline-block;
+  position: relative;
+}
+
+.arrow::before {
   content: "";
-  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
   top: 50%;
   left: 50%;
-  width: 2px;
-  height: 25vh;
-  background-color: white;
-  z-index: 1;
-  transform-origin: top center;
-  transform: translate(-6000%, -1.5%) rotate(90deg);
-}
-
-.fixed-textA-container {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  transform: rotate(90deg);
-  transform-origin: 50% 0%;
-  z-index: 999;
-}
-
-.fixed-textA {
-  color: white;
-  font-size: 1rem;
-  padding: 0.5rem;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.fixed-textA::after {
-  content: "";
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 2px 2px 0 0;
   position: absolute;
+  transform-origin: 50% 50%;
+}
+
+.arrow.down::before {
+  transform: rotate(135deg);
+  margin: -20px 0 0 -15px;
+}
+
+.arrow::after {
+  content: "";
+  display: block;
   top: 50%;
   left: 50%;
-  width: 2px;
-  height: 25vh;
-  background-color: white;
-  z-index: 1;
-  transform-origin: top center;
-  transform: translate(-5000%, -2.5%) rotate(90deg);
+  border-style: solid;
+  border-color: #ffffff;
+  position: absolute;
+  transform-origin: 50% 50%;
+  border: 1px solid#fff;
+}
+
+.arrow.down::after {
+  width: 0;
+  height: 40px;
+  border-width: 0 2px 0 0;
+  transform: translate(-1px, -26px);
+  border: 1px solid#fff;
+}
+
+.arrow.circle {
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 50px;
+  color: #fff;
+}
+
+.arrow:hover {
+  border: 1px solid #fff;
+}
+
+@media (max-width: 768px) {
+  .arrow {
+    visibility: hidden;
+  }
+
+  .arrow.circle {
+    visibility: hidden;
+  }
+}
+
+.aboutp {
+  position: relative; /* Ensure the line stays relative to the text */
+}
+
+.aboutp::after {
+  content: "";
+  position: absolute;
+  bottom: -2px; /* Position the line below the text */
+  left: 0; /* Start position of the line */
+  width: 0; /* Initially, the line has no width */
+  height: 2px; /* Set the height of the line */
+  background-color: #2190d6; /* Color of the line */
+  transition: width 0.3s ease; /* Smooth transition for width change */
+}
+
+.aboutp:hover::after {
+  width: 100%; /* Expand the line to 100% width on hover */
+}
+
+/* Your existing CSS */
+
+.language-icons {
+  bottom: 20px; /* Adjust as needed */
+  left: 50%;
+}
+
+.language-icon {
+  font-size: 3rem;
+  margin: 0 10px;
+  color: white;
 }
