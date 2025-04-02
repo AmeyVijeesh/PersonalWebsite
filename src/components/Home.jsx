@@ -10,6 +10,7 @@ import profPic from './ComponentAssets/profPic2.jpg';
 import ProjectsShowcase from './projectsShowcase';
 import { NavLink } from 'react-router-dom';
 import Footer from './footer';
+import Calendar from 'react-calendar/dist/cjs/Calendar.js';
 
 const Home = () => {
   useEffect(() => {
