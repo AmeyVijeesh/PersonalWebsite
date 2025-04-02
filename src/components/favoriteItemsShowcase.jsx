@@ -20,10 +20,6 @@ const favoriteItems = [
     value: 'Porsche',
   },
   {
-    label: 'Favorite Programming Language',
-    value: 'Python',
-  },
-  {
     label: 'Favorite Book',
     value: 'The Harry Potter Series / The Hunger Games Triology',
   },
@@ -37,9 +33,12 @@ const favoriteItems = [
   },
   {
     label: 'Favorite Chocolate',
-    value: 'Toblerone/Lindt White Chocolate',
+    value: 'Lindt White Chocolate',
   },
-
+  {
+    label: 'Favorite Artist',
+    value: 'Anuel AA',
+  },
   {
     label: 'Favorite Football Player',
     value: 'Kevin De Bruyne',
