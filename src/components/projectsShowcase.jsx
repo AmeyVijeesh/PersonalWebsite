@@ -1,11 +1,9 @@
 import React from 'react';
 import { Flipper, Flipped } from 'react-flip-toolkit';
 import './CSS/projectsshowcase.css';
-import amexpropic from './ComponentAssets/amexpropic.png';
-import wapic from './ComponentAssets/weatherapp.png';
 import atextpic from './ComponentAssets/atext.png';
 import amexpropic2 from './ComponentAssets/amexpropic2.png';
-import recipes from './ComponentAssets/recipes.png';
+import plstudypic from './ComponentAssets/plstudy.png';
 import psim from './ComponentAssets/psim.png';
 import spotify from './ComponentAssets/spotify.png';
 import LazyLoad from 'react-lazy-load';
@@ -13,12 +11,12 @@ import { useNavigate } from 'react-router-dom';
 
 const projects = [
   {
-    title: 'SpotifyInfo',
+    title: 'PLStudy',
     description:
-      'See your Spotify playlists, search for songs, view your top artists and tracks with this website.',
-    imageUrl: spotify,
-    liveDemoUrl: 'https://getspotifyinfo.netlify.app/',
-    sourceCodeUrl: 'https://github.com/AmeyVijeesh/Restaurant-Recommender',
+      'An all-in-one productivity tracker with personalised statistics and integrated timer.',
+    imageUrl: plstudypic,
+    liveDemoUrl: 'https://plstudy.vercel.app',
+    sourceCodeUrl: 'https://github.com/AmeyVijeesh/study-app',
   },
   {
     title: 'Phone Emulator',
