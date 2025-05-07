@@ -3,7 +3,7 @@ import PageSec1 from './pageSec1';
 import PageSec2 from './pageSec2';
 import PageSec3 from './pageSec3';
 import LocomotiveScroll from 'locomotive-scroll';
-import 'locomotive-scroll/dist/locomotive-scroll.css';
+import 'locomotive-scroll/src/locomotive-scroll.scss';
 import './CSS/home.css';
 import bgVideo2 from './ComponentAssets/bgvideo8.mp4';
 import profPic from './ComponentAssets/profPic2.jpg';
