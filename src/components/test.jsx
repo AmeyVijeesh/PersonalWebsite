@@ -1,31 +1,47 @@
-import React, { useEffect } from 'react';
-import LocomotiveScroll from 'locomotive-scroll';
-import 'locomotive-scroll/src/locomotive-scroll.scss'; // Import Locomotive Scroll styles
+import React, { useEffect, useRef } from 'react';
 import './test.css';
+import bgVideo2 from './ComponentAssets/bgvideo8.mp4';
+import Lenis from 'lenis';
+import gsap from 'gsap';
 
 const Test = () => {
+  const videoRef = useRef(null);
+
   useEffect(() => {
-    const scroll = new LocomotiveScroll({
-      el: document.querySelector('[data-scroll-containera]'),
-      smooth: true,
-    });
+    // Init Lenis smooth scroll
+    const lenis = new Lenis({ smooth: true });
 
-    scroll.on('scroll', (args) => {
-      const h1 = document.querySelector('h1');
-      if (h1) {
-        const scrollY = args.scroll.y; // Get vertical scroll position
-        h1.style.transform = `translateX(${scrollY}px)`; // Adjust horizontal position
-      }
-    });
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
 
+    // Pause the video
+    const video = videoRef.current;
+    video.pause();
+
+    // Update video time on scroll
+    const updateVideo = () => {
+      const scrollTop = window.scrollY;
+      const maxScroll = document.body.scrollHeight - window.innerHeight;
+      const scrollFraction = scrollTop / maxScroll;
+
+      const duration = video.duration || 1; // avoid NaN
+      video.currentTime = scrollFraction * duration;
+    };
+
+    window.addEventListener('scroll', updateVideo);
     return () => {
-      scroll.destroy();
+      window.removeEventListener('scroll', updateVideo);
+      lenis.destroy();
     };
   }, []);
-
   return (
-    <div data-scroll-containera className="c">
-      <h1>Your Heading Here</h1>
+    <div style={{ height: '200vh' }} className="homeCont">
+      <video ref={videoRef} muted>
+        <source src={bgVideo2} type="video/mp4" />
+      </video>{' '}
     </div>
   );
 };
