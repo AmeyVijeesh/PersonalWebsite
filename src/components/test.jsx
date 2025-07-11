@@ -1,14 +1,12 @@
 import React, { useEffect, useRef } from 'react';
 import './test.css';
-import bgVideo2 from './ComponentAssets/bgvideo8.mp4';
+import bgVideo2 from './ComponentAssets/videoplayback3.mp4';
 import Lenis from 'lenis';
-import gsap from 'gsap';
 
 const Test = () => {
   const videoRef = useRef(null);
 
   useEffect(() => {
-    // Init Lenis smooth scroll
     const lenis = new Lenis({ smooth: true });
 
     function raf(time) {
@@ -17,17 +15,15 @@ const Test = () => {
     }
     requestAnimationFrame(raf);
 
-    // Pause the video
     const video = videoRef.current;
     video.pause();
 
-    // Update video time on scroll
     const updateVideo = () => {
       const scrollTop = window.scrollY;
       const maxScroll = document.body.scrollHeight - window.innerHeight;
       const scrollFraction = scrollTop / maxScroll;
 
-      const duration = video.duration || 1; // avoid NaN
+      const duration = video.duration || 1;
       video.currentTime = scrollFraction * duration;
     };
 
@@ -37,11 +33,23 @@ const Test = () => {
       lenis.destroy();
     };
   }, []);
+
   return (
-    <div style={{ height: '200vh' }} className="homeCont">
-      <video ref={videoRef} muted>
+    <div>
+      {/* Fixed background video */}
+      <video ref={videoRef} muted className="videoo">
         <source src={bgVideo2} type="video/mp4" />
-      </video>{' '}
+      </video>
+
+      {/* Scrollable content */}
+      <div
+        className="scrollContent"
+        style={{ height: '200vh', position: 'relative', zIndex: 1 }}
+      >
+        <h1 style={{ color: 'white', padding: '20px' }}>
+          Scroll to control the video
+        </h1>
+      </div>
     </div>
   );
 };

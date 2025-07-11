@@ -4,6 +4,7 @@ import './CSS/projectsshowcase.css';
 import atextpic from './ComponentAssets/atext.png';
 import amexpropic2 from './ComponentAssets/amexpropic2.png';
 import plstudypic from './ComponentAssets/plstudy.png';
+import liminalitypic from './ComponentAssets/liminalitypic.png';
 import psim from './ComponentAssets/psim.png';
 import spotify from './ComponentAssets/spotify.png';
 import LazyLoad from 'react-lazy-load';
@@ -19,11 +20,12 @@ const projects = [
     sourceCodeUrl: 'https://github.com/AmeyVijeesh/study-app',
   },
   {
-    title: 'Phone Emulator',
-    description: "Similar to XCode's and Android Studio's emulator.",
-    imageUrl: psim,
-    liveDemoUrl: 'https://github.com/AmeyVijeesh/Phone-Simulator',
-    sourceCodeUrl: 'https://github.com/AmeyVijeesh/Phone-Simulator',
+    title: 'Liminality - An Immersive Experience',
+    description:
+      'An interactive, immersive website that explores liminality and surreality in a single page.',
+    imageUrl: liminalitypic,
+    liveDemoUrl: 'https://liminality-three.vercel.app/',
+    sourceCodeUrl: 'https://github.com/AmeyVijeesh/Liminality',
   },
   {
     title: 'AText Editor',
